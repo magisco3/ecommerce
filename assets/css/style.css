@@ -13,6 +13,12 @@ body{
 img{
 	width: 100%;
 }
+a{
+	color: inherit;
+}
+body > .container{
+	background: #fff;
+}
 #show{
 	display: none;
 }
@@ -25,6 +31,9 @@ img{
 	width: 25px;
 	height: 20px;
 	float: right;
+}
+.main-header ul li a:hover{
+	color: #F5B114;
 }
 .hero{
 	height: 550px;
@@ -57,8 +66,12 @@ aside a{
 .body{
 	padding: 50px 20px;
 }
+.show-case{
+	padding: 0 100px;
+}
 .card{
-	.background: #ccc;
+	box-shadow: 5px 10px #ccc;
+	margin-bottom: 30px;
 }
 .cart{
 	background: #fff;
@@ -123,6 +136,9 @@ aside a{
 		border: 1px solid black;
 		border-radius: 20px;	
 	}
+	.show-case{
+		padding: 0 100px;
+	}
 	.nav-side{
 		display: inline-block;
 		width: 300px;
@@ -141,6 +157,9 @@ aside a{
 	aside{
 		display: block;
 		border-right: 1px solid black;
+	}
+	.show-case{
+		padding: 0 100px;
 	}
 	.item{
 		height: 150px;
