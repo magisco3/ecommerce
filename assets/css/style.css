@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul{
+	list-style-type: none;
+}
+body{
+	background: #eee;
+	position: relative;
+}
+img{
+	width: 100%;
+}
+#show{
+	display: none;
+}
+.main-header{
+	height: 70px;
+	padding-top: 20px;
+}
+.main-header ul li{
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	float: right;
+}
+.hero{
+	height: 550px;
+	background: url(../images/bg4.jpg) center no-repeat;
+	background-size: cover;
+	padding: 150px 30px;
+	text-align: center;
+}
+.hero h1{
+	color: #F5B114;
+	font-size: 40px;
+}
+.hero p{
+	color: #F5B114;
+	font-size: 2em;
+}
+.hero a{
+	background: #3BF5AC;
+}
+aside{	
+	transition: all 1000ms;
+}
+aside li{
+	min-height: 50px;
+}
+aside a{
+	text-decoration: none;
+	color: #000;
+}
+.body{
+	padding: 50px 20px;
+}
+.card{
+	.background: #ccc;
+}
+.cart{
+	background: #fff;
+	min-height: 600px;
+	border-radius: 20px;
+	padding-top: 2		0px;
+}
+.item{
+	height: 100px;
+	border-bottom: 0.5px solid gray;
+}
+.item span{
+	display: block;
+	font-size: 12px;
+	font-weight: 300;
+}
+.item p{
+	font-size: 12px;
+	font-weight: 800;
+}
+.item input{
+	width: 20px;
+	display: inline;
+	margin: 0 auto;
+}
+.item button{
+	border: none;
+	background: none;
+}
+.desc{
+	padding-top: 20px;
+}
+.image{
+	padding: 20px 0;
+}
+.quantity, .amount, .delete{
+	padding: 50px 0 0;
+}
+.summary{
+	padding-left: 10px;
+}
+.summary p{
+	display: inline-block;
+	width: 45%;
+	font-weight: 800;
+}
+.summary form{
+	padding: 50px 0;
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {	
+	aside{
+		position: absolute;
+		padding: 20px;
+		top: -1000px;
+		left: 20;
+		background: #eee;
+		width: 700px !important;
+		height: auto;
+		z-index: 10;
+		border: 1px solid black;
+		border-radius: 20px;	
+	}
+	.nav-side{
+		display: inline-block;
+		width: 300px;
+		float: left;
+	}
+	#show:checked + aside{
+		top: 50px;
+	}
+	.image{
+		padding:0 10px;
+	}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 992px) {
+	aside{
+		display: block;
+		border-right: 1px solid black;
+	}
+	.item{
+		height: 150px;
+		border-bottom: 0.5px solid gray;
+		padding-left: 20px;
+		padding-top: 10px;
+	}
+	.image{
+		padding-top: 0;
+	}
+	.desc{
+		padding-top: 50px;
+	}
+	.quantity, .amount, .delete{
+		padding: 70px 0 0 0;
+	}
+	.item span{
+		display: block;
+		font-size: 12px;
+		font-weight: 300;
+	}
+	.item p{
+		font-size: 20px;
+		font-weight: 800;
+	}
+	.summary{
+		padding-left: 20px;
+		border-left: 1px solid black
+	}
+	
+}
