@@ -1,3 +1,12 @@
+:root{
+	--light: #fff;
+	--dark: #000;
+	--accentLight :#3AFCB0;
+	--background1Dark: #8513A8;
+	--background1Light: #BB02F5;
+	--background2: #F5B31B;
+	--accentDark: #0AA86A;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -17,7 +26,7 @@ a{
 	color: inherit;
 }
 body > .container{
-	background: #fff;
+	background: var(--light);
 }
 #show{
 	display: none;
@@ -61,23 +70,21 @@ aside li{
 }
 aside a{
 	text-decoration: none;
-	color: #000;
+	color: var(--dark);
 }
 .body{
 	padding: 50px 20px;
 }
-.show-case{
-	padding: 0 100px;
-}
+
 .card{
-	box-shadow: 5px 10px #ccc;
+	box-shadow: 5px 10px #BB02F5;
 	margin-bottom: 30px;
 }
 .cart{
-	background: #fff;
+	background: var(--light);
 	min-height: 600px;
 	border-radius: 20px;
-	padding-top: 2		0px;
+	padding-top: 20px;
 }
 .item{
 	height: 100px;
@@ -120,6 +127,63 @@ aside a{
 }
 .summary form{
 	padding: 50px 0;
+}
+.contact{
+	padding: 0 50px;
+}
+.contact h2{
+	font-size: 3em;
+	color: var(--background1Light);
+}
+.contact p{
+	font-size: 1.4em;
+	margin-bottom: 60px;
+}
+.contact button{
+	background: var(--background1Dark);
+	color: var(--accentLight);
+}
+.contact input{
+	border-top: none;
+	border-right: none;
+}
+.contact button:hover{
+	background: var(--background1Dark);
+	color: var(--light);
+}
+.info{
+	background: var(--background1Dark);
+	color: var(--accentLight);
+	border-radius: 20px;
+	height: 530px;
+}
+.info h3{
+	font-size: 3em;
+	color: var(--background2);
+}
+.info p, .info p a{
+	height: 30px;
+	font-size: 20px;
+	margin-top: 50px;
+	text-decoration: none;
+}
+.info p a:hover{
+	color: var(--background2);
+}
+aside{
+	position: absolute;
+	padding: 20px;
+	top: -1000px;
+	left: 20;
+	background: #eee;
+	width: 350px !important;
+	height: auto;
+	z-index: 10;
+	border: 1px solid black;
+	border-radius: 20px;	
+}
+#show:checked + aside{
+	top: 50px;
 }
 
 /*// Small devices (landscape phones, 576px and up)*/

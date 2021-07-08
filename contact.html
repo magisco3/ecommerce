@@ -20,7 +20,8 @@
 	<div class="container">		
 		<header class="main-header">
 			<div class="row row-col-3">
-				<div class="col-3 col-sm-2 col-md-3">					lang
+				<div class="col-3 col-sm-2 col-md-3">
+					lang
 				</div>
 				<div class="col-3 col-sm-4 col-md-6 text-center">
 					<h5>Pritty</h5>
@@ -38,36 +39,46 @@
 		<section class="body">
 			
 			<div class="row cart">				
-				<section class="items col-lg-8">
+				<section class="contact col-lg-8">
 					<div class="header">
-						
-					</div>>
-					<div class="row item d-flex justify-content-between">
-						
+						<h2>Contact Us</h2>
+					</div>
+					<div>
+						<p>
+							Feel free to contact us anytime, we will get back to you as soon as we can!
+						</p>
+						<form>
+							<div class="form-floating mb-5">
+							  <input required type="text" class="form-control" id="name" placeholder="Name">
+							  <label for="name">Name</label>
+							</div>
+							<div class="form-floating mb-5">
+							  <input required type="email" class="form-control" id="email" placeholder="Email">
+							  <label for="email">Email</label>
+							</div>
+							<div class="form-floating mb-5">
+							  <input required type="text" class="form-control" id="message" placeholder="Message">
+							  <label for="message">Message</label>
+							</div>
+							<div class="d-grid col-8 mx-auto">
+							  <button class="btn btn-secondary btn-lg" type="button">Submit</button>
+							</div>
+						</form>
 					</div>
 				</section>
-				<section class="summary col-lg-4 pt-5">
-					<h3>Summary</h3>
-					<p>Items: 3</p>
-					<p class="text-end">$123.00</p>
-					<form>
-						<div class="form-floating mb-5">
-						  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-						    <option selected>Open this select menu</option>
-						    <option value="1">One</option>
-						    <option value="2">Two</option>
-						    <option value="3">Three</option>
-						  </select>
-						  <label for="floatingSelect">SHIPPING</label>
-						</div>
-						<div class="form-floating mb-5">
-						  <input type="text" class="form-control" id="address" placeholder="Address">
-						  <label for="address">ADDRESS</label>
-						</div>
-						<div class="d-grid col-8 mx-auto">
-						  <button class="btn btn-secondary btn-lg" type="button">Checkout <i class="fas fa-long-arrow-alt-right"></i></button>
-						</div>
-					</form>
+				<section class="info col-lg-4 pt-5">
+					<h3>Info</h3>
+					<div>
+						<p>
+							<a href="mailto:support@prittyfingersglemz.com"><span><i class="fas fa-envelope"></i></span> support@prittyfingersglemz.com</a>
+						</p>
+						<p>
+							<a href="tel:+12345678901"><span><i class="fas fa-phone"></i></span> +1 (234) 567 8901</a>
+						</p>
+						<p>
+							<span><i class="fas fa-clock"></i></span> 10:00 - 16:30
+						</p>
+					</div>
 				</section>
 			</div>
 		</section>
