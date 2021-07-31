@@ -25,69 +25,86 @@
 
 		<!-- main -->
 		<div class="wrapper col">
-		<section class="hero">
-			<h1>Product Catalog</h1>
-			<p>New Arrivals</p>
-			<a href="#" class="btn btn-lg">Let's Go!!</a>
-		</section>
 		<section class="body">
-			<div class="row gx-5">
-				<section class="col show-case">
-					<div class="row mb-3 d-flex justify-content-between">
-						<div class="card col-md-3">
-						  <img src="assets/images/item1.jpg" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <h5 class="card-title">Card title</h5>	
-						    <button title="add to cart" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button>
-						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
-						  </div>
-						</div>
-						<div class="card col-md-3">
-						  <img src="assets/images/item2.png" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <h5 class="card-title">Card title</h5>	
-						    <button title="add to cart" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button>
-						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
-						  </div>
-						</div>
-						<div class="card col-md-3">
-						  <img src="assets/images/item3.jpg" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <h5 class="card-title">Card title</h5>	
-						    <button title="add to cart" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button>
-						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
-						  </div>
+			
+			<div class="row cart">				
+				<section class="items col-lg-8 mb-5">
+					<div class="header mb-5">
+						<div class="row">
+							<h2 class="pl-5">Delivery Information</h2>
 						</div>
 					</div>
-					<div class="row mb-3 d-flex justify-content-between">
-						<div class="card col-md-3">
-						  <img src="assets/images/item1.jpg" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <h5 class="card-title">Card title</h5>	
-						    <button title="add to cart" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button>
-						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
-						  </div>
-						</div>
-						<div class="card col-md-3">
-						  <img src="assets/images/item2.png" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <h5 class="card-title">Card title</h5>	
-						    <button title="add to cart" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button>
-						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
-						  </div>
-						</div>
-						<div class="card col-md-3">
-						  <img src="assets/images/item3.jpg" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <h5 class="card-title">Card title</h5>	
-						    <button title="add to cart" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button>
-						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
-						  </div>
-						</div>
+					<div class="form">
+						<form>
+							<div class="input-group mb-3">
+							  <span class="input-group-text" id="basic-addon1">Name</span>
+							  <input type="text" class="form-control" placeholder="Full Name" aria-label="Full Name" aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group mb-3">
+							  <span class="input-group-text" id="basic-addon1">Phone Number</span>
+							  <input type="tel" class="form-control" placeholder="+1 (234) 5678 9087" aria-label="Phone Number" aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group mb-3">
+							  <span class="input-group-text" id="basic-addon1">E-mail Address</span>
+							  <input type="email" class="form-control" placeholder="example@email.com" aria-label="E-mail Address" aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group mb-3">
+							  <span class="input-group-text" id="basic-addon1">Delivery Address</span>
+							  <input type="text" class="form-control" placeholder="Delivery Address" aria-label="delivery-address" aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group mb-3">
+							  <span class="input-group-text" id="basic-addon1">Zip Code</span>
+							  <input type="text" class="form-control" placeholder="Zip Code" aria-label="zip-code" aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group mb-3">
+							  <span class="input-group-text" id="basic-addon1">State</span>
+							  <input type="text" class="form-control" placeholder="State" aria-label="state" aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group mb-3">
+							  <span class="input-group-text" id="basic-addon1">Country</span>
+							  <input type="text" class="form-control" placeholder="Country" aria-label="Country" aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group">
+							  <span class="input-group-text">Note</span>
+							  <textarea class="form-control" aria-label="With textarea"></textarea>
+							</div>
+						</form>
 					</div>
+				</section>
+				<section class="summary col-lg-4 pt-5">
+					<h3>Select Payment Method</h3>
+					<p>Which payment method are you most comfortable with?</p>
+					<ul class="payment">
+						<li>
+							<a href="#"><i class="fab fa-paypal"></i>&nbsp;&nbsp;Paypal</a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-stripe"></i>&nbsp;&nbsp;Stripe</a>							
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-amazon-pay"></i>&nbsp;&nbsp;Amazon Pay</a>							
+						</li>
+						<li>
+							<a href="#"><i class="far fa-credit-card"></i>&nbsp;&nbsp;Pay With Card</a>							
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-google-pay"></i>&nbsp;&nbsp;Google Pay</a>							
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-apple-pay"></i>&nbsp;&nbsp;Apple Pay</a>							
+						</li>
+					</ul>
 				</section>
 			</div>
 		</section>
+		<!-- footer -->
 				<footer>
 			<div class="container-fluid">
 				<div class="row">
@@ -138,6 +155,7 @@
 				<p class="mt-5 text-center">&copy; <?= date("Y", time()); ?> PrittyFingersGlamz.com.All Rights Reserved</p>
 			</div>
 		</footer>
+		<!-- /footer -->
 	</div>
 </body>
 </html>

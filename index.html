@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>E-commerce</title>
+	<title>PrittyFingerGlamz | Admin</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,96 +14,80 @@
 	<script src="https://kit.fontawesome.com/193d0c7be3.js" crossorigin="anonymous"></script>
 
 	<!-- main css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/adminStyle.css">
+	<script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
 </head>
 <body>
-	<div class="container">		
-		<header class="main-header">
-			<div class="row row-col-3">
-				<div class="col-3 col-sm-2 col-md-3">
-					<label for="show"><i class="fas fa-bars d-lg-none"></i></label>
-					lang
+	<div class="container-fluid row">
+		<label class="checker d-md-none" for="menu"><i class="fas fa-bars"></i></label>	
+		<input type="checkbox" id="menu">		
+		<?php require_once '../helper/aside.php'; ?>
+
+		<!-- main -->
+		<div class="wrapper col">
+		<section class="hero">
+			<div class="row">
+				<div class="col-md-5 mb-5">
+					<h1>
+						Live Bold. <br>
+						Feel Beautiful.
+					</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<a href="#" class="btn btn-lg btn-warning">Explore</a>
 				</div>
-				<div class="col-3 col-sm-4 col-md-6 text-center">
-					<h5>Pritty</h5>
-				</div>
-				<div class="col-6 gx-3 col-sm-6 col-md-3">
-					<ul>
-						<li>
-							<a href="cart.html" title="Cart"><i class="fas fa-shopping-cart"></i></a>
-						</li>
-						<li>
-							<a href="profile.html" title="Profile"><i class="far fa-user"></i></a>
-						</li>						
-						<li>
-							<a href="wishlist.html" title="Wishlist"><i class="far fa-heart"></i></a>
-							</li>
-						<li>
-							<a href="#" title="Search"><i class="fas fa-search"></i></a>
-						</li>
-					</ul>
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-5">
+							<div class="w-75 mx-auto mb-4" style="overflow: hidden;">
+								<img class="hero-image" src="assets/images/hair1.jpg">
+							</div>
+							<div class="w-75 mx-auto" style="overflow: hidden;">
+								<img class="hero-image" src="assets/images/hair2.jpeg">
+							</div>
+						</div>
+						<div class="col">
+							<img class="hero-image" src="assets/images/hair3.png">
+						</div>
+					</div>
 				</div>
 			</div>
-		</header>
-		<section class="hero">
-			<h1>Product Catalog</h1>
-			<p>New Arrivals</p>
-			<a href="#" class="btn btn-lg">Let's Go!!</a>
 		</section>
+		<div class="container-fluid why">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<i class="fas fa-certificate"></i>
+						<p>Best Quality</p>
+					</div>
+					<div class="col">
+						<i class="fas fa-shipping-fast"></i>
+						<p>Fast & Safe Delivery</p>
+					</div>
+					<div class="col">
+						<i class="fab fa-pagelines"></i>
+						<p>Natural</p>
+					</div>
+					<div class="col">
+						<i class="far fa-handshake"></i>
+						<p>Trusted</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<section class="body">
-			<div class="row gx-5">
-				<input type="checkbox" id="show">
-				<aside class="col-lg-3" id="sidebar">
-					<nav class="nav-side">
-						<h3>Categories</h3>
-						<ul>
-							<h6>New Categories<i class="fa-solid fa-xmark"></i></h6>
-							<li>
-								<h6><a href="#bags" data-bs-toggle="collapse" role="button">Bags</a></h6>
-								<ul class="collapse" id="bags">
-									<li>link1</li>
-									<li>link2</li>
-									<li>link3</li>
-									<li>link4</li>
-								</ul>
-							</li>
-							<li>clock</li>
-							<li>Constructor</li>
-							<li>Accessories</li>
-						</ul>
-					</nav>
-					<div class="nav-side">
-						<h5>Filter By</h5>
-						<div>
-							<h6>price</h6>
-							<input type="range" min="20" max="10000" name="">
-						</div>
-						<ul>
-							<h6>material</h6>
-							<li>link1</li>
-							<li>link2</li>
-							<li>link3</li>
-							<li>link4</li>
-							<li>link5</li>
-							<li>link6</li>
-						</ul>
-						<div>
-							<h6>Material</h6>
-							<input type="radio" name="1">
-							<input type="radio" name="1">
-							<input type="radio" name="1">
-							<input type="radio" name="1">
-							<input type="radio" name="1">
-							<input type="radio" name="1">
-							<input type="radio" name="1">
-							<input type="radio" name="1">
-							<input type="radio" name="1">
-						</div>
-					</div>
-					
-				</aside>
+			<div class="row">
 				<section class="col show-case">
-					<div class="row mb-3 d-flex justify-content-between">
+					<div class="header mb-5">
+						<h2>Trending</h2>
+					</div>
+					<div class="row mb-3 gx-5 d-flex justify-content-between">
 						<div class="card col-md-3">
 						  <img src="assets/images/item1.jpg" class="card-img-top" alt="...">
 						  <div class="card-body">
@@ -128,8 +112,6 @@
 						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
 						  </div>
 						</div>
-					</div>
-					<div class="row mb-3 d-flex justify-content-between">
 						<div class="card col-md-3">
 						  <img src="assets/images/item1.jpg" class="card-img-top" alt="...">
 						  <div class="card-body">
@@ -154,10 +136,175 @@
 						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
 						  </div>
 						</div>
+						<div class="card col-md-3">
+						  <img src="assets/images/item3.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>	
+						    <button title="add to cart" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button>
+						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+						  </div>
+						</div>
+						<div class="card col-md-3">
+						  <img src="assets/images/item3.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>	
+						    <button title="add to cart" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button>
+						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+						  </div>
+						</div>
+						<div class="card col-md-3">
+						  <img src="assets/images/item3.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>	
+						    <button title="add to cart" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button>
+						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+						  </div>
+						</div>
+						<div class="card col-md-3">
+						  <img src="assets/images/item3.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>	
+						    <button title="add to cart" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button>
+						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+						  </div>
+						</div>
+						<div class="card col-md-3">
+						  <img src="assets/images/item3.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>	
+						    <button title="add to cart" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button>
+						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+						  </div>
+						</div>
+						<div class="card col-md-3">
+						  <img src="assets/images/item3.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>	
+						    <button title="add to cart" class="btn btn-warning"><i class="fas fa-shopping-cart"></i></button>
+						    <button title="add to wishlist" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+						  </div>
+						</div>
 					</div>
+					<center>
+						<a href="#" class="btn btn-warning btn-lg mt-5">More</a>
+					</center>
 				</section>
 			</div>
+			<section class="customize">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h1>Choice Customization</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<a href="#" class="btn btn-lg btn-warning">
+								Learn More
+							</a>
+						</div>
+						<div class="col-md-6">
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="gallery">
+				<div class="container">
+					<div class="row mb-3">
+						<div class="col-md-6 mb-3">
+							<div class="row">
+								<div class="col">
+									<img class="gallery-image mb-3" src="assets/images/bg3.jpg">
+									<img class="gallery-image" src="assets/images/bg6.jpg">
+								</div>
+								<div class="col">
+									<img class="gallery-image" src="assets/images/hair2.jpeg">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 mb-3">
+							<img class="gallery-image" src="assets/images/bg2.jpg">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 mb-3">
+							<img class="gallery-image" src="assets/images/bg5.jpg">
+						</div>
+						<div class="col-md-6 mb-3">
+							<div class="row">
+								<div class="col">
+									<img class="gallery-image mb-3" src="assets/images/bg4.jpg">
+									<img class="gallery-image" src="assets/images/bg7.jpg">
+								</div>
+								<div class="col">
+									<img class="gallery-image" src="assets/images/hair3.png">
+								</div>
+							</div>
+						</div>
+					</div>
+					<center>
+						<a href="#" class="btn btn-warning btn-lg mt-5">Browse</a>
+					</center>
+				</div>
+			</section>
 		</section>
+		<!-- Footer -->
+				<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-lg-3 mb-4 pt-5">
+						<h4>Subscribe To Our Newsletter</h4>
+						<div class="input-group mb-3">
+						  <span class="input-group-text" id="basic-addon1">E-mail</span>
+						  <input type="email" class="form-control" placeholder="Full Name" aria-label="Full Name" aria-describedby="basic-addon1">
+						</div>
+						<button class="btn btn-warning">Subscribe</button>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-4 py-3">
+						<h4>Leave Us A Message</h4>
+						<form>
+							<div class="input-group mb-3">
+							  <span class="input-group-text" id="basic-addon1">Name</span>
+							  <input type="text" class="form-control" placeholder="Full Name" aria-label="Full Name" aria-describedby="basic-addon1">
+							</div>
+							<div class="input-group mb-3">
+							  <span class="input-group-text" id="basic-addon1">E-mail</span>
+							  <input type="text" class="form-control" placeholder="Full Name" aria-label="Full Name" aria-describedby="basic-addon1">
+							</div>
+							<div class="input-group mb-3">
+							  <span class="input-group-text">Message</span>
+							  <textarea class="form-control" aria-label="With textarea"></textarea>
+							</div>
+							<button class="btn btn-warning">Submit</button>
+						</form>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-4 py-3">
+						<h4>Follow Us On</h4>
+						<ul>
+							<li>
+								<a href="http://www.facebook.com/"><i class="fab fa-facebook-f"></i>&nbsp;&nbsp;@Facebook Link</a>
+							</li>
+							<li>
+								<a href="http://www.instagram.com/"><i class="fab fa-instagram"></i>&nbsp;@Instagram Link</a>
+							</li>
+							<li>
+								<a href="http://www.twitter.com/"><i class="fab fa-twitter"></i>&nbsp;@Twitter Link</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-4 py-3">
+						<h4>Payment Accept</h4>
+					</div>
+				</div>
+				<p class="mt-5 text-center">&copy; <?= date("Y", time()); ?> PrittyFingersGlamz.com.All Rights Reserved</p>
+			</div>
+		</footer>
+		<!-- /footer -->
 	</div>
 </body>
 </html>
